@@ -1,11 +1,9 @@
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.util.*;
+import java.io.*;
+import java.util.ArrayList;
+import java.util.Comparator;
 
-public class Main {
-    public static void main(String[] args) throws Exception {
+public class Problem1138 {
+    public Problem1138() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         int n = Integer.parseInt(br.readLine());
@@ -37,4 +35,6 @@ public class Main {
         bw.flush();
         bw.close();
     }
+
+
 }
