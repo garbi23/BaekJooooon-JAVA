@@ -17,11 +17,11 @@ public class Problem2304 {
             String[] datas = br.readLine().split(" ");
             int x =  Integer.parseInt(datas[0]);
             int y =  Integer.parseInt(datas[1]);
-            pos.add(new Main.Pos(x, y));
+            pos.add(new Pos(x, y));
         }
-        pos.sort(Comparator.comparing(Main.Pos::getX));
+        pos.sort(Comparator.comparing(Pos::getX));
         int idx= 0;
-        for(Main.Pos positon : pos){
+        for(Pos positon : pos){
             if(positon.y > maxY){
                 maxY = positon.y;
                 index = idx;
