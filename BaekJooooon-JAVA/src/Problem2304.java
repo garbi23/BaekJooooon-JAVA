@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.ListIterator;
 
 public class Problem2304 {
-    static ArrayList<Main.Pos> pos = new ArrayList<>();
+    static ArrayList<Pos> pos = new ArrayList<>();
     public Problem2304() throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -51,7 +51,7 @@ public class Problem2304 {
 
         System.out.print(result);
     }
-    public static class Pos{
+    class Pos{
         int x = 0;
         int y = 0;
 
